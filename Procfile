@@ -1,1 +1,1 @@
-web: bundle exec ruby lib/dead-cockroach.rb
+web: bundle exec ruby lib/dead_cockroach.rb
