@@ -1,0 +1,5 @@
+[![Build Status](https://travis-ci.org/pikesley/dead-cockroach.svg)](https://travis-ci.org/pikesley/dead-cockroach)
+[![Dependency Status](http://img.shields.io/gemnasium/pikesley/dead-cockroach.svg)](https://gemnasium.com/pikesley/dead-cockroach)
+[![Coverage Status](http://img.shields.io/coveralls/pikesley/dead-cockroach.svg)](https://coveralls.io/r/pikesley/dead-cockroach)
+[![Code Climate](http://img.shields.io/codeclimate/github/pikesley/dead-cockroach.svg)](https://codeclimate.com/github/pikesley/dead-cockroach)
+[![Badges](http://img.shields.io/:badges-5/5-ff6799.svg)](https://github.com/badges/badgerbadgerbadger)
