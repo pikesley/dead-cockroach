@@ -2,6 +2,7 @@ require 'sinatra/base'
 require 'haml'
 require 'kramdown'
 require 'curb'
+require 'json'
 
 class DeadCockroach < Sinatra::Base
   @@locals = {
