@@ -1,3 +1,8 @@
 language: ruby
 rvm:
 - 2.1.2
+deploy:
+  provider: heroku
+  app: dead-cockroach
+  api_key:
+    secure: YpAf+c2vgxN5nlW5x6b0cYy1Qmmg7RID+kllfpFd6whcYJ1rbaXynTfJGfUdpJm9EgEovqaub8csBD5YrS2T2zlv5yFOq4s/bHspUBCVFAt8ZzWdMoBs3t9fZJph7DCv2wyOSvAflFpLgiw7/T5fyQrWgXI+Ys+gqqCOPmyHI3M=
