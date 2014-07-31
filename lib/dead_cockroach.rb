@@ -1,8 +1,24 @@
 require 'sinatra/base'
+require 'haml'
+require 'kramdown'
+require 'curb'
 
 class DeadCockroach < Sinatra::Base
+  @@locals = {
+    :bootstrap_theme => '../lavish-bootstrap.css',
+    :github          => {
+      :user    => 'pikesley',
+      :project => 'dead-cockroach',
+      :ribbon  => 'right_gray_6d6d6d'
+    }
+  }
+
   get '/' do
-    'Hello DeadCockroach!'
+    haml :readme, :locals => @@locals.merge(
+        {
+            :title => 'Bridging the gap between Pokrovsky and Uncle Clive.'
+        }
+    )
   end
 
   get '/:text' do
@@ -15,7 +31,7 @@ class DeadCockroach < Sinatra::Base
         URI.encode(params[:text][0...6])
     ]
     full_url  = URI.join(ssfaas, text)
-    c         = ::Curl::Easy.new("%s" % full_url)
+    c         = Curl::Easy.new("%s" % full_url)
     c.headers = {
         'Accept' => 'application/json'
     }
