@@ -4,7 +4,7 @@ require 'kramdown'
 require 'curb'
 require 'json'
 
-require 'dead_cockroach/squasher'
+require_relative 'dead_cockroach/squasher'
 
 class DeadCockroach < Sinatra::Base
   @@locals = {
