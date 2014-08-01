@@ -46,15 +46,42 @@ class DeadCockroach < Sinatra::Base
       n << line.map { |i| i * 4 }
     end
 
-    if n[0].reduce(:+) == 0
-      n.shift
-    elsif n[-1].reduce(:+) == 0
-      n.pop
-    else
-      n = n[0..3] + n[5..7]
+
+
+    chars = []
+    n.each do |line|
+      count = 0
+      line.each_slice(8).to_a.each do |piece|
+        chars[count] = [] if chars[count].nil?
+        chars[count] << piece
+        count += 1
+      end
     end
 
-    h['data'] = n
+    fixed_chars = []
+    chars.each do |char|
+      if char[0].reduce(:+) == 0
+        puts 'blank top row'
+        char.shift
+      elsif char[-1].reduce(:+) == 0
+        puts 'blank bottom row'
+        char.pop
+      else
+        puts 'compressing'
+        char = char[0..3] + n[5..7]
+      end
+
+      fixed_chars << char
+    end
+
+    fixed_chars.each do |fc|
+      fc.each do |line|
+        puts line.inspect
+      end
+      puts ''
+    end
+
+    h['data'] = out
     h.to_json
   end
 

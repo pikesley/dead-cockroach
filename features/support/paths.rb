@@ -14,8 +14,14 @@ module NavigationHelpers
       '/'
 
     when /a/
-        '/a'
-        
+      '/a'
+
+    when /©2/
+      '/%C2%A92'
+
+    when /2/
+      '/2'
+
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
     #
