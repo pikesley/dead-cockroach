@@ -22,5 +22,5 @@ group :test do
   gem 'terminal-notifier-guard'
   gem 'coveralls', require: false
   gem 'vcr'
-  gem 'webmock', '= 1.15.2'
+  gem 'webmock' #, '= 1.15.2'
 end
