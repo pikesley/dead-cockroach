@@ -8,7 +8,7 @@ require_relative 'dead_cockroach/squasher'
 
 class DeadCockroach < Sinatra::Base
   @@locals = {
-    :bootstrap_theme => '../lavish-bootstrap.css',
+#    :bootstrap_theme => '../lavish-bootstrap.css',
     :github          => {
       :user    => 'pikesley',
       :project => 'dead-cockroach',
