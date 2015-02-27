@@ -1,8 +1,5 @@
 source 'https://rubygems.org'
 
-ruby '2.1.5'
-#ruby-gemset=dead-cockroach
-
 gem 'sinatra'
 gem 'thin'
 gem 'curb'
