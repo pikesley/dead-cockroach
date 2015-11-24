@@ -1,8 +1,9 @@
-[![Build Status](https://travis-ci.org/pikesley/dead-cockroach.svg)](https://travis-ci.org/pikesley/dead-cockroach)
-[![Dependency Status](http://img.shields.io/gemnasium/pikesley/dead-cockroach.svg)](https://gemnasium.com/pikesley/dead-cockroach)
-[![Coverage Status](http://img.shields.io/coveralls/pikesley/dead-cockroach.svg)](https://coveralls.io/r/pikesley/dead-cockroach)
-[![Code Climate](http://img.shields.io/codeclimate/github/pikesley/dead-cockroach.svg)](https://codeclimate.com/github/pikesley/dead-cockroach)
-[![Badges](http://img.shields.io/:badges-5/5-ff6799.svg)](https://github.com/badges/badgerbadgerbadger)
+[![Build Status](http://img.shields.io/travis/pikesley/dead-cockroach.svg?style=flat-square)](https://travis-ci.org/pikesley/dead-cockroach)
+[![Dependency Status](http://img.shields.io/gemnasium/pikesley/dead-cockroach.svg?style=flat-square)](https://gemnasium.com/pikesley/dead-cockroach)
+[![Coverage Status](http://img.shields.io/coveralls/pikesley/dead-cockroach.svg?style=flat-square)](https://coveralls.io/r/pikesley/dead-cockroach)
+[![Code Climate](http://img.shields.io/codeclimate/github/pikesley/dead-cockroach.svg?style=flat-square)](https://codeclimate.com/github/pikesley/dead-cockroach)
+[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://pikesley.mit-license.org)
+[![Badges](http://img.shields.io/:badges-6/6-ff6799.svg?style=flat-square)](https://github.com/badges/badgerbadgerbadger)
 
 #Dead Cockroach
 
