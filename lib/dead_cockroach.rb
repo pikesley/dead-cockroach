@@ -36,7 +36,8 @@ class DeadCockroach < Sinatra::Base
     full_url  = URI.join(ssfaas, text)
     c         = Curl::Easy.new("%s" % full_url)
     c.headers = {
-        'Accept' => 'application/json'
+        'Accept' => 'application/json',
+        'API-Version' => 1
     }
     c.perform
 
