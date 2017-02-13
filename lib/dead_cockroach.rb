@@ -30,7 +30,7 @@ class DeadCockroach < Sinatra::Base
 
   def respond text
     ssfaas    = 'http://uncleclive.herokuapp.com/'
-    text      = '/%s' % [
+    text      = '/font/%s' % [
         URI.encode(params[:text][0...6])
     ]
     full_url  = URI.join(ssfaas, text)

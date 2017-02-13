@@ -1,8 +1,10 @@
 language: ruby
 rvm:
-  - 2.3.1
+- 2.4.0
 deploy:
   provider: heroku
-  app: dead-cockroach
   api_key:
-    secure: "DJ1vueLatpW+6XNK2/zTCQFuASA4sGs0h6VIzXa3rZV5RqY4/AGlzAP0bCHIQjPRsG9Amz0YrKIwmbWQLqJn2si3LBs2kZ+2/8xEJ7LBbn+Y03oZbk3eb9ewjWzrp3ER/EUBjQ/Y2oFWXUa0RvmlCzUXxQF0IT/3btQcQkt5xV4="
+    secure: fUaANEjIEvQNGnRjLcEjMz5GmrB86EehuUth3PWWt7nwU6it/MF3tj30LsM6dXFdBc5yaLB4GY5LLJRSuVM8OZSG9JFjLQgQUYBkjVgWBO+k+8kX6iT90z9klzWUudo4UjNZFEa73+XQiUtDPDDW3lnWwwxPSWjgFiWjMSkPawo=
+  app: dead-cockroach
+  on:
+    repo: pikesley/dead-cockroach
