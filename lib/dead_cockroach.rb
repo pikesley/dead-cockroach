@@ -8,7 +8,6 @@ require_relative 'dead_cockroach/squasher'
 
 class DeadCockroach < Sinatra::Base
   @@locals = {
-#    :bootstrap_theme => '../lavish-bootstrap.css',
     :github          => {
       :user    => 'pikesley',
       :project => 'dead-cockroach',
@@ -29,7 +28,9 @@ class DeadCockroach < Sinatra::Base
   end
 
   def respond text
-    ssfaas    = 'http://uncleclive.herokuapp.com/'
+    ssfaas    = 'http://uncle-clive:%s' % [
+      ENV['CLIVE_PORT']
+    ]
     text      = '/font/%s' % [
         URI.encode(params[:text][0...6])
     ]
